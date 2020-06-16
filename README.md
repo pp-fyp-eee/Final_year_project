@@ -11,13 +11,9 @@ Pre-requisites for Design Studio on the iPad:
 
 Please note that the Design Studio iPad app, has the project name ‘CanvasDrawingApp’. A variety of models that were also tested are included within this project, in the 'Models’ folder. For a detailed user guide, please refer to page 119 of my final report.
 
-
-Please note that the Design Studio iPad app, has the project name ‘CanvasDrawingApp’. A variety of models that were also tested are included within this project, in the 'Models’ folder. For a detailed user guide, please refer to page 119 of my final report.
-
 After downloading and opening the Xcode project, plug in your 10.5 inch iPad Pro into your laptop. Within Xcode, select your iPad from the devices panel and press the ‘Run’ button, or simply use the keyboard shortcut ‘Command-R’. As before,[ Apple’s Developer Documentation](https://help.apple.com/xcode/mac/current/#/dev60b6fbbc7) can be referred to for any assistance
 
-It is important to note that for the TestBench, models need to be imported into the Xcode project for investigation. These models need to be of the format ‘.mlmodel’. The model class names need to be specified in the ‘predictRandomForest()’ and ‘predictImage()’ methods, on lines 29 and 50 respectively.
-
+It is important to note that for the TestBench, models need to be imported into the Xcode project for investigation. These models need to be of the format ‘.mlmodel’. The model class names need to be specified in the `predictRandomForest()` and `predictImage()` methods, on lines 29 and 50 respectively.
  
 Design Studio mac extension project for code generation, has the file name ‘ReceiveDataFromiPad’
 
