@@ -269,7 +269,7 @@ extension ViewController {
             URLQueryItem(name: "count", value: "5"),
         ]
             
-        if type == .Landscape || imageName == "golf" {
+        if type == .Landscape {
             queryItems.append(URLQueryItem(name: "orientation", value: "landscape"))
         }
         else if type == .Square {
@@ -307,26 +307,7 @@ extension ViewController {
                             let image: UIImage = self.getImage(from: link)
                             
                             DispatchQueue.main.async {
-                                if imageName == "walks" && i == 1 {
-                                    imageView.image = image
-                                    imageView.accessibilityLabel = description
-                                    imageView.isAccessibilityElement = true
-
-                                    // only after image has been set
-                                    if animateIn {
-                                        self.animateSubViewIn(subView: imageView, isImageBannerView: isImageBannerView)
-                                    }
-                                }
-                                else if imageName == "golf" && i == 2 {
-                                    imageView.image = image
-                                    imageView.accessibilityLabel = description
-                                    imageView.isAccessibilityElement = true
-
-                                    if animateIn {
-                                        self.animateSubViewIn(subView: imageView, isImageBannerView: isImageBannerView)
-                                    }
-                                }
-                                else if i == 0 {
+                                if i == 0 {
                                     imageView.image = image
                                     imageView.accessibilityLabel = description
                                     imageView.isAccessibilityElement = true
